@@ -7,11 +7,9 @@ def encode():
         encoded_password.append(int(digit)+3)
     print("Your password has been encoded and stored!")
 
+
 def decode():
     pass
-
-# This is a test using GitHub Desktop
-
 
 if __name__ == '__main__':
     while True:
