@@ -1,17 +1,25 @@
-# Adam Horvitz is lamepu
+# Nathan Achinger
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+def encode():
+    encoded_password = []
+    password = input("Please enter your password to encode: ")
+    for digit in password:
+        encoded_password.append(int(digit)+3)
+    print("Your password has been encoded and stored!")
+
+def decode():
+    pass
 
 
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     while True:
         print("Menu\n-------------")
         print("1. Encode\n2. Decode\n3. Quit")
-        user_input = input("Please enter an option: ")
+        user_input = input("\nPlease enter an option: ")
         if user_input == '1':
-            password_to_encode = input("Please enter your password to encode: ")
+            encode()
+        elif user_input == '2':
+            decode()
+        elif user_input == '3':
+            break
 
