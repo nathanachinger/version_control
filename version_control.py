@@ -1,4 +1,4 @@
-# Nathan Achinger.
+# Nathan Achinger
 
 def encode():
     encoded_password = []
