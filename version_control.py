@@ -1,15 +1,14 @@
 # Nathan Achinger
 
 def encode():
-    encoded_password = []
     password = input("Please enter your password to encode: ")
-    for digit in password:
-        encoded_password.append(int(digit)+3)
-    print("Your password has been encoded and stored!")
+    encoded_password = [str((int(digit)-7)) if int(digit) > 6 else str((int(digit)+3)) for digit in password]
+    return ''.join(encoded_password)
 
 
 def decode():
-    pass
+    decoded_password = ''
+    print(f"The encoded password is {encoded_password}, and the original password is {decoded_password}")
 
 
 if __name__ == '__main__':
@@ -18,7 +17,7 @@ if __name__ == '__main__':
         print("1. Encode\n2. Decode\n3. Quit")
         user_input = input("\nPlease enter an option: ")
         if user_input == '1':
-            encode()
+            encoded_password = encode()
         elif user_input == '2':
             decode()
         elif user_input == '3':
